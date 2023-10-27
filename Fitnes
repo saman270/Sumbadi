@@ -1,0 +1,24 @@
+def calculate_bmi(weight, height):
+    # Расчет BMI
+    bmi = weight / (height * height)
+
+    # Определение категории BMI
+    if bmi < 18.5:
+        category = "Недостаточный вес"
+    elif 18.5 <= bmi < 24.9:
+        category = "Нормальный вес"
+    elif 24.9 <= bmi < 29.9:
+        category = "Избыточный вес"
+    else:
+        category = "Ожирение"
+
+    return bmi, category
+
+# Ввод данных пользователем
+weight = float(input("Введите свой вес в килограммах: "))
+height = float(input("Введите свой рост в метрах: "))
+
+# Расчет и вывод результата
+bmi, category = calculate_bmi(weight, height)
+print(f"Ваш BMI: {bmi:.2f}")
+print(f"Категория: {category}")
