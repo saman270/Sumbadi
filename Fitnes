@@ -7,12 +7,7 @@ height = float(input("Введите свой рост в метрах: "))
 # Расчет и вывод результата
 bmi, category = calculate_bmi(weight, height)
 print(f"Ваш BMI: {bmi:.2f}")
-print(f"Категория: {category}")
-def calculate_bmi(weight, height):
-    # Расчет BMI
-    bmi = weight / (height * height
-    return bmi, category
-
+print(f"Кате
 # Ввод данных пользователем
 weight = float(input("Введите свой вес в килограммах: "))
 height = float(input("Введите свой рост в метрах: "))
